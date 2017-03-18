@@ -1,58 +1,86 @@
-# Design by lianghai
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>登录页面</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/account.css" rel="stylesheet" />
+</head>
 <body>
-<style>
-#header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px; 
-}
-#section {
-    width:350px;
-    float:left;
-    padding:10px; 
-}
-#footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px; 
-}
-</style>
 
-<div id="header">
-<h1>City Gallery</h1>
-</div>
+	<div class="account-container bg mt10">
+		<div class='header clearfix'>
+	            <div>
+	                <a href="/home/index">
+	                    <img src="images/logo_small.png">
+	                </a>
+	            </div>
+	        </div>
+	</div>
 
-<div id="nav">
-London<br>
-Paris<br>
-Tokyo<br>
-</div>
-
-<div id="section">
-<h1>London</h1>
-<p>
-London is the capital city of England. It is the most populous city in the United Kingdom,
-with a metropolitan area of over 13 million inhabitants.
-</p>
-<p>
-Standing on the River Thames, London has been a major settlement for two millennia,
-its history going back to its founding by the Romans, who named it Londinium.
-</p>
-</div>
-
-<div id="footer">
-Copyright W3School.com.cn
-</div>
-
+	<div class='account-container mt30'>
+        
+        <div class='body clearfix pd10' style='position: relative;'>
+        	<div class='logo left'>
+        		<img style='height:350px;' src="images/login_logo.png" />
+        	</div>
+        	<div class='login left mt30'>
+        		<form id='Form' action='/account/login' method='POST'>
+	        		
+	        		<div class='group mt10'>
+	                	<label class='tip'><span class="red">*</span>用户名：</label>
+	                	<input type='text' require='true' label='用户名' Field='string' range='4-40' name='username' />
+	                	<i class='i-name'></i>
+	                </div>
+	              
+	                <div class='group'>
+	                	<label class='tip'><span class="red">*</span>密码：</label>
+	                	<input  type='password' require='true'  label='密码' min-len='6' name='pwd' />
+	                	<i class='i-pwd'></i>
+	                </div>
+	               
+	                <div class='group'>
+	                	<label class='tip'><span class="red">*</span>验证码：</label>
+	                	<input  type='text' require='true' label='验证码' style='width:80px;' name='checkcode' />
+	                    <a style='width:125px;display:inline-block;'><img class='checkcode' onclick='ChangeCode();' id='imgCode' src='/account/check' /></a>
+	                </div>
+	                <div class='group font12 mb0'>
+	                	<label class='tip'></label>
+	                	<label style='width:246px;display: inline-block;'>
+	                        <input id='protocol' name='protocol' type='checkbox' checked='checked' />
+	                        <span>自动登录</span>
+	                        <span class='ml10'><a href='#'>忘记密码？</a></span>
+	                    </label>
+	                </div>
+	                <div class='group mt0'>
+	                	<label class='tip'></label>
+	                	<input type='submit' class='submit' value='登	录' />
+	                </div>
+	        	</form>
+	        	
+	        	<div class='go-register'><a href='/account/register'>免费注册 >> </a></div>
+        	</div>
+        </div>
+		
+	</div>
+	
+	<div class='account-container mt20' style='text-align:center;color:#555;'>
+		© 2004-2015 www.autohome.com.cn All Rights Reserved. 老男孩 版权所有
+	</div>
+	
+	
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/wupeiqi.js"></script>
+    <script type="text/javascript">
+    	
+    	$(function(){
+    		$.login('#Form','');
+    	})
+    
+	    function ChangeCode() {
+            var code = document.getElementById('imgCode');
+            code.src += '?';
+        }
+    </script>
 </body>
+</html>
