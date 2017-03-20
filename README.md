@@ -7,9 +7,6 @@
     <link href="css/account.css" rel="stylesheet" />
 </head>
 <body>
-
-	
-
 	<div class='account-container mt30'>
         
         <div class='body clearfix pd10' style='position: relative;'>
