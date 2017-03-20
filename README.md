@@ -11,7 +11,7 @@
         
         <div class='body clearfix pd10' style='position: relative;'>
         	<div class='logo left'>
-        		<img style='height:3px;' src="images/login_logo.png" />
+        		<img style='height:300px;' src="images/login_logo.png" />
         	</div>
         	<div class='login left mt30'>
         		<form id='Form' action='/account/login' method='POST'>
