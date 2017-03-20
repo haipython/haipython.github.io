@@ -54,7 +54,7 @@
 	</div>
 	
 	<div class='account-container mt20' style='text-align:center;color:#555;'>
-		© 2004-2015 www.autohome.com.cn All Rights Reserved.  版权所有
+		© 2004-2015 https://haipytho.github.io All Rights Reserved.  版权所有
 	</div>
 	
 	
