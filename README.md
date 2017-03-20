@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -8,15 +8,7 @@
 </head>
 <body>
 
-	<div class="account-container bg mt10">
-		<div class='header clearfix'>
-	            <div>
-	                <a href="/home/index">
-	                    <img src="images/logo_small.png">
-	                </a>
-	            </div>
-	        </div>
-	</div>
+	
 
 	<div class='account-container mt30'>
         
@@ -65,7 +57,7 @@
 	</div>
 	
 	<div class='account-container mt20' style='text-align:center;color:#555;'>
-		© 2004-2015 www.autohome.com.cn All Rights Reserved. 老男孩 版权所有
+		© 2004-2015 www.autohome.com.cn All Rights Reserved.  版权所有
 	</div>
 	
 	
