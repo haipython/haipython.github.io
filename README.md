@@ -5,6 +5,7 @@
     <title>登录页面</title>
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/account.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class='account-container mt30'>
